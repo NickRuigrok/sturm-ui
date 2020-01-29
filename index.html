@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sturm UI</title>
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="css/sturm.css"/>
+
+        <script src="https://kit.fontawesome.com/b4631779fb.js"></script>
+
+        <style>
+            html, body {
+                /* background: whitesmoke; */
+            }
+
+            .container {
+                /* background: white; */
+                padding: 1.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="notification top error hidden">
+            .notification.top.error
+            <div class="close">&times;</div>
+        </div>
+
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="nav-section">
+                        <a href="/">
+                            <img class="nav-brand" src="img/logo.png" alt="logo" />
+                        </a>
+                        <ul class="nav-items">
+                            <li>
+                                <a href="/" class="nav-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="/" class="nav-link">Hoe werkt het?</a>
+                            </li>
+                            <li>
+                                <a href="/" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-section right">
+                        <ul class="nav-items">
+                            <li>
+                                <a href="/aanmelden" class="button simple">Aanmelden</a>
+                            </li>
+                            <li>
+                                <a href="/aanmelden" class="button primary">Plaats winkeldochter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <div class="modal">
+            <div class="content">
+                dvbfvds
+            </div>
+        </div> -->
+
+
+        <div class="container">
+
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3 class="dividing">h3.dividing</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+
+        <hr/>
+
+        <a href="#" class="link">Anchor Tag</a>
+        <a href="#" class="link primary">Anchor Tag</a>
+        <a href="#" class="link info">Anchor Tag</a>
+        <a href="#" class="link success">Anchor Tag</a>
+        <a href="#" class="link error">Anchor Tag</a>
+
+        <div class="divider"></div>
+
+        <button class="button small">.button.small</button>
+        <button class="button primary small">.button.primary.small</button>
+        <button class="button simple small">.button.simple.small</button><br/>
+
+        <button class="button loading">.button</button>
+        <button class="button basic">.button</button>
+        <button class="button primary basic">.button.basic.primary</button>
+        <button class="button primary">.button.primary</button>
+        <button class="button simple">.button.simple</button><br/>
+
+        <button class="button fullwidth">.button.fullwidth</button>
+        <button class="button primary fullwidth">.button.primary.fullwidth</button>
+
+        <div class="divider"></div>
+            <h3>Inloggen</h3>
+        <form>
+            <div class="field small">
+                <label>Label</label>
+                <input class="input" type="text" placeholder=".input" />
+            </div>
+
+            <div class="field fullwidth">
+                <label>Label</label>
+                <input class="input" type="text" placeholder=".input" />
+            </div>
+
+            <div class="field addon">
+                <input class="input" type="text" placeholder="Zoeken..." />
+                <button class="button primary">Zoek</button>
+            </div>
+
+            <div class="field">
+                <label>Label</label>
+                <select class="select">
+                    <option>.select</option>
+                    <option>.select</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <div class="checkbox">
+                    <input type="checkbox" name="cb" id="cb">
+                    <label for="cb">
+                        .checkbox
+                    </label>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="radio">
+                    <input type="radio" name="rb" id="rb">
+                    <label for="rb">.radio</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="radio">
+                    <input type="radio" name="rb" id="rb1">
+                    <label for="rb1">.radio</label>
+                </div>
+            </div>
+        </form>
+
+        <hr/>
+
+        <div class="message">
+            .message.small
+        </div>
+
+        <div class="message primary">
+            .message.primary
+        </div>
+
+        <div class="message info">
+            .message.info
+        </div>
+
+        <div class="message success">
+            .message.success
+        </div>
+
+        <div class="message error">
+            .message.error
+        </div>
+
+        <hr/>
+
+        <progress class="progress primary" value="20" max="100"></progress>
+        <progress class="progress info" value="20" max="100"></progress>
+        <progress class="progress success" value="20" max="100"></progress>
+        <progress class="progress error" value="20" max="100"></progress>
+
+        <progress class="progress small"></progress>
+        <progress class="progress"></progress>
+        <progress class="progress large"></progress>
+
+        <div class="loader"></div>
+
+        <hr/>
+
+        <div class="row">
+            <div class="col-sm-8 col-md-4">
+                <div class="message primary fullwidth">
+                    .message.primary
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-4">
+                <div class="message primary fullwidth">
+                    .message.primary
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-4">
+                <div class="message primary fullwidth">
+                    .message.primary
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-4">
+                <div class="message primary fullwidth">
+                    .message.primary
+                </div>
+            </div>
+        </div>
+ 
+        </div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="image">
+                        <img src="https://www.winkeldochter.nu/public/uploads/10/d8aWYLfm9zuT.jpg"/>
+                        <div class="price">&euro; 3499,-</div>
+                    </div>
+                    <div class="content">
+                        <span class="header">Title</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="image">
+                        <img src="https://www.winkeldochter.nu/public/uploads/10/d8aWYLfm9zuT.jpg"/>
+                    </div>
+                    <span class="title">Title</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="image">
+                        <img src="https://www.winkeldochter.nu/public/uploads/10/d8aWYLfm9zuT.jpg"/>
+                    </div>
+                    <span class="title">Title</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

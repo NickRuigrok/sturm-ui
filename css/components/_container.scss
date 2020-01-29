@@ -1,0 +1,41 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: $tabletBreakpoint - 1)  {
+    .container {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+/* --- MOBILE --- */
+@media only screen and (min-width: 576px) and (max-width: ($tabletBreakpoint - 1)) { 
+    .container {
+        width: $mobileContainerWidth;
+        margin: 0 auto;
+    }
+}
+
+/* --- TABLET --- */
+@media only screen and (min-width: $tabletBreakpoint) and (max-width: ($laptopBreakpoint - 1)) { 
+    .container {
+        width: $tabletContainerWidth;
+    }
+}
+
+/* --- LAPTOP --- */
+@media only screen and (min-width: $laptopBreakpoint) and (max-width: ($desktopBreakpoint - 1)) {
+    .container {
+        width: $laptopContainerWidth;
+    }
+}
+
+/* --- DESKTOP --- */
+@media only screen and (min-width: $desktopBreakpoint) {
+    .container {
+        width: $desktopContainerWidth;
+    }
+}

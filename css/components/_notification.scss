@@ -1,0 +1,51 @@
+.notification {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    color: #555;
+    background: #D1D1D1;
+    font-size: 1.6rem;
+    text-align: center; 
+    box-sizing: border-box;
+    z-index: 999; 
+
+    .close {
+        position: absolute;
+        font-size: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+
+    &.top {
+        position: fixed;
+        top: 0;
+    }
+
+    &.bottom {
+        position: fixed;
+        bottom: 0;
+    }
+
+    &.primary {
+        color: white;
+        background: $primary-color;
+    }
+
+    &.success {
+        color: white;
+        background: $success-color;
+    }
+
+    &.error {
+        color: white;
+        background: $error-color;
+    }
+
+    &.info {
+        color: white;
+        background: $info-color;
+    }
+}

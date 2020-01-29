@@ -1,0 +1,277 @@
+.field {
+
+  .input,
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    padding: 9px 14px;
+    border-radius: $border-radius;
+    border: 1px solid transparent;
+    border-bottom: 2px solid transparent;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-size: 1.7rem;
+    background-color: whitesmoke;
+    color: $font-color;
+
+    -webkit-transition: $transition-duration all ease;
+    -o-transition: $transition-duration all ease;
+    transition: $transition-duration all ease;
+
+    &::placeholder {
+      color: $default-color;
+      transition: $transition-duration;
+    }
+    &:-ms-input-placeholder {
+      color: $default-color;
+      transition: $transition-duration;
+    }
+    &::-ms-input-placeholder {
+      color: $default-color;
+      transition: $transition-duration;
+    }
+
+    &:focus {
+      border: 1px solid $primary-color;
+      border-bottom: 2px solid $primary-color;
+      background-color: #fff8eb;
+      outline: 0;
+      &::placeholder {
+        color: $default-color * .8;
+        transition: $transition-duration;
+      }
+      &:-ms-input-placeholder {
+        color: $default-color * .8;
+        transition: $transition-duration;
+      }
+      &::-ms-input-placeholder {
+        color: $default-color * .8;
+        transition: $transition-duration;
+      }
+    }
+  }
+
+  textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  label {
+    display: block;
+    font-weight: 400;
+  }
+
+  &.addon,
+  &.addon-right {
+    display: inline-flex;
+    position: relative;
+
+    .input,
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    select {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin: 0;
+      flex: 1;
+    }
+
+    .button,
+    button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin: 0;
+    }
+  }
+
+  &.addon-left {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    position: relative;
+
+    .input,
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    select {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin: 0;
+      flex: 1;
+    }
+
+    .button,
+    button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin: 0;
+    }
+  }
+
+  &.fullwidth {
+    .input,
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    textarea,
+    select {
+      width: 100%;
+    }
+  }
+}
+
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+legend.small {
+  font-size: 1rem;
+}
+
+legend.large {
+  font-size: 2rem;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+.field > .checkbox > input[type="checkbox"],
+.field > .radio > input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.field > .checkbox > label,
+.field > .radio > label {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 3rem;
+  height: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.field > .checkbox > label::before,
+.field > .radio > label::before,
+.field > .checkbox > label::after,
+.field > .radio > label::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.field > .checkbox > label::before,
+.field > .radio > label::before {
+  content: " ";
+  border: 2px solid $default-color;
+  border-radius: $border-radius;
+}
+/* Checkbox */
+.field > .checkbox > input[type="checkbox"] + label::after {
+  content: '';
+  height: 1.4rem;
+  width: 1.4rem;
+  top: .3rem;
+  left: .3rem;
+  background-color: white;
+}
+/* Radio */
+.field > .radio > input[type="radio"] + label::before {
+  border-radius: 50%;
+}
+.field > .radio > input[type=radio] + label::after {
+  content: " ";
+  top: .3rem;
+  left: .3rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: white;
+  border-radius: 50%;
+}
+
+/* :disabled */
+.field > .checkbox > input[type="checkbox"]:disabled + label,
+.field > .radio > input[type="radio"]:disabled + label {
+  cursor: not-allowed;
+}
+
+.field > .checkbox > input[type="checkbox"]:disabled + label::before,
+.field > .radio > input[type="radio"]:disabled + label::before {
+  cursor: not-allowed;
+  background: $default-color;
+}
+
+/* :checked */
+.field > .checkbox > input[type="checkbox"]:checked + label::before,
+.field > .radio > input[type="radio"]:checked + label::before {
+  background: $primary-color;
+  border-color: $primary-color;
+}
+.field > .checkbox > input[type="checkbox"] + label::after,
+.field > .radio > input[type=radio] + label::after {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.field > .checkbox > input[type="checkbox"]:checked + label::after,
+.field > .radio > input[type=radio]:checked + label::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.field > .checkbox > label::before,
+.field > .radio > label::before,
+.field > .checkbox > label::after,
+.field > .radio > label::after {
+  -webkit-transition: $transition-duration all ease;
+  -o-transition: $transition-duration all ease;
+  transition: $transition-duration all ease;
+}
+
+[class*=col].field {
+  .input {
+    margin-bottom: 0;
+  }
+}

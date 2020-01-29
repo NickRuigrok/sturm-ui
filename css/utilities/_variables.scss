@@ -1,0 +1,41 @@
+$rem: 10px;
+
+$body-color: white;
+
+$font-family: "Muli", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-color: #262626;
+
+$default-color: #d8d9d9;
+$primary-color: #ffa100;
+$success-color: #4BB543;
+$error-color: #D8000C;
+$info-color: #0080ff;
+
+$border-radius: 4px;
+
+$transition-duration: .2s;
+
+$spacing-count: 20;
+$spacing-step: .5rem;
+
+$grid-columns: 12;
+$grid-gutter: 1rem;
+
+$gutter: ($rem * 1.5);
+$scrollbarWidth: 100px;
+
+/* MOBILE CONTAINER SIZE */
+$mobileBreakpoint: 750px;
+$mobileContainerWidth: calc(100% - (#{$gutter} * 2) - #{$scrollbarWidth});
+
+/* TABLET CONTAINER SIZE */
+$tabletBreakpoint: 1000px;
+$tabletContainerWidth: $tabletBreakpoint - ($gutter * 2) - $scrollbarWidth; 
+
+/* LAPTOP CONTAINER SIZE */
+$laptopBreakpoint: 1250px;
+$laptopContainerWidth: $laptopBreakpoint - ($gutter * 2) - $scrollbarWidth;
+
+/* DESKTOP CONTAINER SIZE */
+$desktopBreakpoint: 1500px;
+$desktopContainerWidth: $desktopBreakpoint - ($gutter * 2) - $scrollbarWidth;

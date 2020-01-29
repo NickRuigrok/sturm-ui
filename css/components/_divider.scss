@@ -1,0 +1,33 @@
+hr,
+.divider {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-width: 0;
+    border-top: 1px solid darken($default-color, 7.5%);
+}
+hr.no-spacing,
+.divider.no-spacing {
+    margin: 0;
+}
+
+h1.dividing,
+h2.dividing, 
+h3.dividing, 
+h4.dividing, 
+h5.dividing, 
+h6.dividing {
+    border-bottom: 1px solid darken($default-color, 7.5%);
+}
+
+hr.primary,
+.divider.primary,
+h1.dividing.primary,
+h2.dividing.primary,
+h3.dividing.primary,
+h4.dividing.primary,
+h5.dividing.primary,
+h6.dividing.primary {
+    border-color: darken($primary-color, 7.5%);
+}

@@ -1,0 +1,43 @@
+a.link {
+    text-decoration: none; 
+    transition: $transition-duration all ease;
+    color: #0000EE;
+    border-bottom: 1px solid #0000EE;
+    &:hover {
+        color: darken(#0000EE, 7.5%);
+        border-color: darken(#0000EE, 7.5%);
+    }
+
+    &.primary { 
+        color: $primary-color;
+        border-color: $primary-color;
+        &:hover {
+            color: darken($primary-color, 7.5%);
+            border-color: darken($primary-color, 7.5%);
+        }
+    }
+    &.info {
+        color: $info-color;
+        border-color: $info-color;
+        &:hover {
+            color: darken($info-color, 7.5%);
+            border-color: darken($info-color, 7.5%);
+        }
+    }
+    &.success {
+        color: $success-color;
+        border-color: $success-color;
+        &:hover {
+            color: darken($success-color, 7.5%);
+            border-color: darken($success-color, 7.5%);
+        }
+    }
+    &.error {
+        color: $error-color;
+        border-color: $error-color;
+        &:hover {
+            color: darken($error-color, 7.5%); 
+            border-color: darken($error-color, 7.5%); 
+        }
+    }
+}

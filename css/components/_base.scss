@@ -1,0 +1,10 @@
+html { font-size: $rem; }
+
+body {
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: $font-family;
+    line-height: 1.6;
+    color: $font-color;
+    background-color: $body-color;
+}

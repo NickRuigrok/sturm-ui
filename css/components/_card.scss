@@ -1,0 +1,60 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    color: $font-color;
+    border-radius: $border-radius;
+    background-color: white;
+    .image {
+        flex: 0 0 auto;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 100%;
+        border-bottom: 1px solid $body-color;
+        img {
+            position: absolute;
+            width: 100%;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .price {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            padding: 0 1rem;
+            bottom: 20px;
+            left: 0;
+            background-color: rgba($primary-color, 1);
+            color: #fff;
+            text-align: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+    }
+    .content {
+        padding: .75rem;
+        box-sizing: border-box;
+        flex-grow: 1;
+        .header {
+            width: 100%;
+            font-size: 2rem;
+            font-weight: 600;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: inherit;
+            transition: $transition-duration color ease;
+        }
+    }
+
+    &.link {
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+}
